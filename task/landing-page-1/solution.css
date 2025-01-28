@@ -1,0 +1,146 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Basic styles */
+  body {
+    font-family: "Arial", sans-serif;
+    line-height: 1.6;
+    overflow: hidden;
+     linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), 
+    url("/assets/chaigym.png");
+  }
+  
+  /* Navbar styles */
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 70px;
+    align-items: center;
+    background-color: rgba(46, 44, 44, 0.858);
+    color: #ffffff;
+    
+  }
+  
+ .logo {
+      /* Add styles for the logo */
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      font-size: 1.5rem;
+     
+    }
+    .logo img {
+        /* Add styles for logo image */
+        border-radius: 30px;
+        
+      }  
+      
+      .nav-links a {
+        /* Add styles for nav links */
+        text-decoration: none;
+        color: #ffffff;
+        padding: 0 10px;
+        font-size: 20px;
+      }
+      .nav-links a:hover {
+        /* Add hover styles for nav links */
+        color: rgb(97, 97, 177);
+        background-color: rgb(179, 238, 238);
+        border-radius: 10px;
+      }
+      .hero {
+        /* Add styles for hero section */
+        height: 100vh; 
+        width: 100vw;
+        background-image: url('./assets/chaigym.png'); 
+        background-size: cover; 
+        background-position: center;
+        background-repeat: no-repeat; 
+        opacity: 0.9;
+      
+      
+      }
+      .hero-content {
+        /* Add styles for hero content */
+        text-align: center;
+        padding: 30px;
+      }
+      .hero-content h1 {
+        /* Add styles for hero heading */
+        color: #ffffff;
+        padding-top: 40px;
+        font-size: 4rem; 
+  font-weight: bold;
+
+        
+      }
+      
+      .hero-content p {
+        /* Add styles for hero paragraph */
+        color: #ffffff;
+        padding-top: 10px;
+        font-size: 1.5rem; 
+  font-weight: bold;
+        
+      }
+      
+      .cta-button {
+        /* Add styles for CTA button */
+        background-color: #e99b15;
+        color: #000000;
+        width: 250px;
+        height: 70px;
+        border-radius: 20px;
+        font-size: 1.5rem; 
+  font-weight: bold;
+  margin-top: 20px;
+  
+
+      }
+      
+      .cta-button:hover {
+        /* Add hover styles for CTA button */
+        background-color: #11527a;
+        color: #dfadad;
+      }
+      /* Features section styles */
+.features {
+    /* Add styles for features section */
+    background-color: rgba(13, 14, 14, 0.816);
+    color: #ffffff;
+    font-weight: 300;
+    display: flex;
+    justify-content: space-around;
+    margin: 60px 40px;
+    padding: 100px;
+    border-radius: 20px;
+  }
+  
+  .feature {
+    /* Add styles for each feature block */
+  
+    width: 20%;
+    height: 200px;
+    border: 5px solid rgb(244, 174, 46);
+    border-radius: 20px;
+   padding-top: 45px;
+    text-align: center;
+    font-weight: 600;
+    font-size: larger;
+    
+   
+  }
+  
+  .feature h3 {
+    /* Add styles for feature heading */
+    color: rgb(244, 174, 46);
+  }
+  
+  .feature p {
+    /* Add styles for feature paragraph */
+    padding: 10px 0;
+    font-weight: 200;
+  }
