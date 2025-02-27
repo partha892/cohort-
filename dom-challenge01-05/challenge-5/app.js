@@ -20,3 +20,6 @@ const images = [
     caption: 'Urban City Skyline',
   },
 ];
+let imgphoto = images.map((image) => {
+  return image.caption;
+});
