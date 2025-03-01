@@ -18,3 +18,5 @@ function name(score) {
 }
 name(40)
 console.log(name(80))
+
+
