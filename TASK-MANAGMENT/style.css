@@ -74,3 +74,34 @@ body {
 #task-btn:hover {
     background: #00b3b3;
 }
+
+.item {
+    display: flex;
+    justify-content: space-between; /* Push text & button apart */
+    align-items: center;
+    background-color: #f9f9f9;
+    padding: 8px 12px;
+    margin: 8px 0;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    width: 200px;
+    cursor: grab;
+}
+
+.item button {
+    background-color: red;
+    color: white;
+    border: none;
+    padding: 4px 8px;
+    cursor: pointer;
+    font-size: 12px;
+    border-radius: 3px;
+    margin-left: 10px; /* Add spacing between text & button */
+}
+
+.item button:hover {
+    background-color: darkred;
+}
+p{
+    color: black;
+}

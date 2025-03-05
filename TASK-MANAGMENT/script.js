@@ -1,15 +1,47 @@
 const taskbtn = document.getElementById("task-btn");
 const todoboard = document.getElementById("todo-board");
 
+
 taskbtn.addEventListener("click", () => {
     const input = prompt("Enter your task");
     if (!input) return;
 
     const addcard = document.createElement("p");
+    const delbutton = document.createElement("button")
+    const editbutton = document.createElement("button")
+
+
+    delbutton.textContent = "X"
+    editbutton.textContent = "Edit"
+    
+
+delbutton.addEventListener("click",()=>{
+    addcard.remove();
+})
+
+editbutton.addEventListener("click",()=>{
+
+})
+
+
+
+
     addcard.classList.add("item");
     addcard.innerText = input;
     addcard.setAttribute("draggable", true);
     todoboard.appendChild(addcard);
+    addcard.appendChild(editbutton);
+    addcard.appendChild(delbutton);
+    
+
+
+    addcard.addEventListener("dragstart", () => {
+        addcard.classList.add("flying");
+    });
+    addcard.addEventListener("dragend", () => {
+        addcard.classList.remove("flying");
+    });
+
 });
 
 const allboard = document.querySelectorAll(".board");
